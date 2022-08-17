@@ -5,6 +5,7 @@ import MainGame from "../components/game/mainGame";
 import MainContact from "../components/contact/mainContact"
 import MainLogin from "../components/layout/auth"
 import MainRegistrasi from "../components/auth/register"
+import MainProfile from "../components/profile/mainProfile"
 
 import { useRouter } from "next/router";
 
@@ -31,6 +32,9 @@ const Menu = (props) => {
 
 		case 'registrasi':
 			return <MainRegistrasi onPage={onPage}/>
+
+		case 'profile':
+			return <MainProfile onPage={onPage}/>
 
 		default:
 			return <section>Loading....</section>	

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { connect } from "react-redux";
 
-
 const mapStateToProps = (state, ownProps) => ({
   stateObject: state
 }) 
@@ -13,14 +12,17 @@ const MainAbout = (props) => {
     <div>
         {dataUser ? 
             (
-              <div>
-                <h1 className="sr-only">Hai {dataUser.username}</h1>
+              <div className="text-center">
+                <h3 className="sr-only">Hai {dataUser.username}</h3>
+                <h5>Challenge Binar Academy</h5>
+                <h5>Membuat website menggunakan react js dan redux</h5>
               </div>
             )
           : 
             (
-              <div>
-                <h1 className="sr-only">Page About</h1>
+              <div className="text-center">
+                <h3>Challenge Binar Academy</h3>
+                <h5>Membuat website menggunakan react js dan redux</h5>
               </div>
             )
           }

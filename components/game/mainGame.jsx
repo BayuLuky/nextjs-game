@@ -36,7 +36,6 @@ const MainGame = (props) => {
 
   return (
     <div>
-      <h1 className="sr-only">Page Game</h1>
       <CardGroup>
         {games.map((game, idx) => ( 
           <Card key={`keyGames-${idx}`} className="me-4">

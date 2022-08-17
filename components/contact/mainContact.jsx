@@ -4,7 +4,11 @@ const MainContact = () => {
 
   return (
     <div>
-        <h1 className="sr-only">Page Contact</h1>
+        <div className="text-center">
+          <h3 className="sr-only">Binar Academy</h3>
+          <h5>Fullstack Web - React JS</h5>
+          <h5>Next JS - Redux</h5>
+        </div>
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -30,8 +31,8 @@ const Header = (props) => {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
+            className="me-auto my-2 my-lg-0 justify-content-center" 
+            style={{ flex: 1}}
             navbarScroll
           >
             <Link href="/home"><a className="btn nav-links me-2">Home</a></Link>
@@ -42,9 +43,12 @@ const Header = (props) => {
           {dataUser ? 
             (
               <div>
+                <Link href="/profile">
+                  <Button variant="outline-primary" className='me-2'>{dataUser.username}</Button>
+                </Link>
                 <Link href="/">
-                    <Button variant="outline-danger" onClick={logoutHandler} >Logout</Button>
-                  </Link>
+                  <Button variant="outline-danger" onClick={logoutHandler} >Logout</Button>
+                </Link>
               </div>
             )
           : 

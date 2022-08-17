@@ -14,8 +14,10 @@ const Home = (props) => {
 			</Head>
 
 			<div className="max-w-3xl mx-auto px-4 sm:px-6 lg:max-w-screen-2xl lg:px-8">
-				<h1 className="sr-only">Page title</h1>
-
+				<div className="text-center">
+					<h1 className="sr-only mb-4">PLAY TRADITIONAL GAME</h1>
+					<h3>Experience new traditional game play</h3>
+              	</div>
 			</div>
 		</React.Fragment>
 	)
